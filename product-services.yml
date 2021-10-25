@@ -1,17 +1,10 @@
-server:
-  port: 8089
-  error:
-    include-message: ALWAYS
-spring:
-  cloud:
-    config:
-      enabled: false
-  jpa:
-    database: POSTGRESQL
-  hibernate:
-    ddl-auto: update
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/product
-    username: postgres
-    password: educ77 
+server.port=8099
+#spring.cloud.config.enabled=false
+spring.jpa.database=POSTGRESQL
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.driver-class-name=org.postgresql.Driver
+#spring.datasource.url=jdbc:postgresql://localhost:5433/db_jasper_report
+spring.datasource.url=jdbc:postgresql://localhost:5432/product
+spring.datasource.username=postgres
+spring.datasource.password=educ77 
+server.error.include-message=ALWAYS
