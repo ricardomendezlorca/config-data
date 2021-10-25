@@ -1,17 +1,17 @@
 server:
-  port:8089
+  port: 8089
   error:
-    include-message:ALWAYS
+    include-message: ALWAYS
 spring:
   cloud:
     config:
-      enabled:false
+      enabled: false
   jpa:
-    database:POSTGRESQL
+    database: POSTGRESQL
   hibernate:
-    ddl-auto:update
+    ddl-auto: update
   datasource:
-    driver-class-name:org.postgresql.Driver
-    url:jdbc:postgresql://localhost:5432/product
-    username:postgres
-    password:educ77 
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/product
+    username: postgres
+    password: educ77 
